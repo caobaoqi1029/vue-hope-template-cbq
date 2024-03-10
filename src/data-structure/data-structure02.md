@@ -322,7 +322,7 @@ void printList(ArrayList list){   //编写一个函数用于打印表当前的�
 int main() {
     struct List list;
     if(initList(&list)){
-        insertList(&list, 666, 1);  //每次插入操作后都打印一下表，看看当前的情况 
+        insertList(&list, 666, 1);  //每次插入操作后都打印一下表，看看当前的情况
         printList(&list);
         insertList(&list, 777, 1);
         printList(&list);

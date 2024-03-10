@@ -46,11 +46,11 @@ category:
 ```c
 void basic01_demo01() {
     printHeader("basic01_demo01");
-    
+
     int c;
     int a = (3 + (c = 2)) * 6;
     printf("a = %d", a);
-    
+
     printFooter("basic01_demo01");
 }
 ```
@@ -67,11 +67,11 @@ void basic01_demo01() {
 ```c
 void basic01_demo02() {
     printHeader("basic01_demo02");
-    
+
     int b, c;
     int a = (b = 5, c = b + 8);
     printf("a = %d", a);
-    
+
     printFooter("basic01_demo02");
 }
 
@@ -101,7 +101,7 @@ void basic01_demo03() {
     } else {
         printf("Score is: %d Level is: bad", score);
     }
-    
+
     printFooter("basic01_demo03");
 }
 ```
@@ -152,14 +152,14 @@ void basic01_demo04() {
 
 ::: warning 水仙花数
 
-水仙花数（Narcissistic number）也被称为超完全数字不变数（pluperfect digital invariant, PPDI）自恋数、自幂数、阿姆斯壮数或阿姆斯特朗数（Armstrong number）水仙花数是指 一个 3 位数，它的每个位上的数字的 3 次幂之和等于它本身 现在请你设计一个 C 语言程序，打印出所有 1000 以内的水仙花数。 
+水仙花数（Narcissistic number）也被称为超完全数字不变数（pluperfect digital invariant, PPDI）自恋数、自幂数、阿姆斯壮数或阿姆斯特朗数（Armstrong number）水仙花数是指 一个 3 位数，它的每个位上的数字的 3 次幂之和等于它本身 现在请你设计一个 C 语言程序，打印出所有 1000 以内的水仙花数。
 
 eg: 1^3 + 5^3+ 3^3 = 153
 
 ```c
 void basic01_demo05() {
     printHeader("basic01_demo05");
-    
+
     int num = 1000;
     int first = 0, second = 0, third = 0;
     while (num != -1) {
@@ -301,7 +301,7 @@ void basic02_demo01() {
         printf("%d ", arr[i]);
     }
     printf("\n------------------------------------\n");
-    
+
     printFooter("basic02_demo01");
 }
 ```
@@ -322,7 +322,7 @@ void basic02_demo01() {
      -           9 > 1 --> 3 5 2 7 0 6 7 1 9 8 4
      -           9 > 8 --> 3 5 2 7 0 6 7 1 8 9 4
      -           9 > 4 --> 3 5 2 7 0 6 7 1 8 4 9
-    
+
      第 1 轮排序结束后序列为:  [3 5 2 7 0 6 7 1 8 4 9] 最大的元素 9 已经排在了序列的最后 对除最后一个元素外的剩余元素进行第二轮排序，重复步骤 1
      第 2 轮排序结束后 序列为: [3 2 5 0 6 7 1 7 4 8 9] 最大的元素 8 已经排在了序列的最后
      第 3 轮排序结束后 序列为: [2 3 0 5 6 1 7 4 7 8 9] 最大的元素 7 已经排在了序列的最后
@@ -335,7 +335,7 @@ void basic02_demo01() {
      第 10 轮排序结束后 序列为:[0 1 2 3 4 5 6 7 7 8 9] 最大的元素 1 已经排在了序列的最后
 ```
 
-::: 
+:::
 
 ## 三、高级部分
 
@@ -390,7 +390,7 @@ void basic02_demo02() {
 }
 ```
 
-> 
+>
 
 ```c
 /**
@@ -418,7 +418,7 @@ void basic02_demo03() {
 ```c
 void basic02_demo04() {
     printHeader("basic02_demo04");
-    
+
     char cbq01[] = {'H', 'E', 'L', 'L', 'O', ' ', 'C', 'B', 'Q', '\0'};
     const char cbq02[] = "HELLO CBQ";
     printf("cbq01 = %s \n| cbq02 = %s ", cbq01, cbq02);
@@ -459,12 +459,12 @@ void basic02_demo05() {
         j--;
     }
     printf("%s is back str\n", str);
-    
+
     printFooter("basic02_demo05");
 }
 ```
 
-::: 
+:::
 
 ---
 
@@ -486,7 +486,7 @@ int main() {
 在这个示例中，str1 是一个字符串 "Hello, World!"，str2 是一个包含空格、逗号和感叹号的字符串 `" ,!"` `strcspn(str1, str2) ` 的返回值是 7，表示字符串 str1 开头连续不包含 str2 中任何字符的长度为 7
 
 
-::: 
+:::
 
 ## 3.5 KMP 字符串匹配算法
 
@@ -739,7 +739,7 @@ void basic03_demo07(){
 
 ::: danger malloc 函数的使用
 
- * **malloc** 用于向系统申请分配指定 **size 个字节** 的内存空间返回类型是 **void * 类型** 如果申请成功返回 **首地址** 
+ * **malloc** 用于向系统申请分配指定 **size 个字节** 的内存空间返回类型是 **void * 类型** 如果申请成功返回 **首地址**
  * 如果失败返回 NULL 空地址（比如系统内存不足了就可能会申请失败）
  * 内存资源是很宝贵的（不像硬盘几个 T 随便用 我们的电脑可能 32G 的内存都算高配了）
  * 不能随便浪费 所以 **一般情况下 malloc 和 free 都是一一对应的** 这样才能安全合理地使用内存
@@ -753,7 +753,7 @@ void basic03_demo08() {
     printf("*p = %d \n", *p);
     free(p);
     p = NULL;
-    
+
     printFooter("basic03_demo08");
 }
 ```

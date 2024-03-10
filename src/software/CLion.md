@@ -98,7 +98,7 @@ endforeach ()
 
 > 文件介绍
 
-- .archive 
+- .archive
 - .runtime 运行环境
 - src 源代码
 
@@ -140,14 +140,14 @@ int main() {
 
 void ${NAME}_demo01(){
     printHeader("${NAME}_demo01");
-    
+
     printFooter("${NAME}_demo01");
 
 }
 
 void ${NAME}_demo02(){
     printHeader("${NAME}_demo02");
-    
+
     printFooter("${NAME}_demo02");
 }
 ```
