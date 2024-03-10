@@ -3,7 +3,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-    hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+    hostname: "https://github.com/caobaoqi1029/vue-hope-template-cbq/deployments/github-pages",
     darkmode: "enable",
 
     author: {
@@ -16,7 +16,7 @@ export default hopeTheme({
 
     logo: "https://jz-cbq-1311841992.cos.ap-beijing.myqcloud.com/images/go.svg",
 
-    repo: "vuepress-theme-hope/vuepress-theme-hope",
+    repo: "https://github.com/caobaoqi1029/vue-hope-template-cbq",
 
     docsDir: "src",
     navbar,
