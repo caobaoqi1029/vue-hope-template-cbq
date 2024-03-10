@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://vuepress-theme-hope-docs-demo.netlify.app/vue-hope-template-cbq/sitemap.xml
+Sitemap: https://github.com/caobaoqi1029/vue-hope-template-cbq/deployments/github-pages/vue-hope-template-cbq/sitemap.xml
